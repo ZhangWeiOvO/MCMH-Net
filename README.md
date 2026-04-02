@@ -23,8 +23,9 @@
 ## Requirements
 ```
 Python >= 3.8
-PyTorch >= 1.12
-mamba-ssm
+PyTorch >= 2.3.1
+mamba-ssm >= 2.2.2
+causal_conv1d >= 1.4.0
 ```
 
 ## Citation
