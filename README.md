@@ -11,11 +11,10 @@
 | Model architecture | ✅ Available |
 | Training code | 🔒 Coming upon acceptance |
 | Validation & evaluation code | 🔒 Coming upon acceptance |
-| Pre-trained weights | 🔒 Coming upon acceptance |
 
 ## Model Architecture
 
-The `model/` directory contains the implementation of:
+该 `model/` directory contains the implementation of:
 - MCMH-Net encoder-decoder architecture
 - Content-Aware Fusion Attention (CAFA) module
 - Dynamic Cross-scale Serpentine Mamba2 (DCSMamba2) module
@@ -29,10 +28,5 @@ mamba-ssm
 ```
 
 ## Citation
-
 If you find this work useful, please cite:
 (Citation information will be updated upon acceptance.)
-
-## Contact
-
-liye@usst.edu.cn
