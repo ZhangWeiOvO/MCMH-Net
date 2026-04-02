@@ -232,7 +232,7 @@ class DynamicGate(nn.Module):
         return self.conv(x)  # [B,3,1,1]
 
 
-# 修改点1：新增空间扫描函数 ----------------------------
+
 class space_scan(nn.Module):
     def __init__(self):
         super().__init__()
