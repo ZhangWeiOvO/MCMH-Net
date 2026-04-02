@@ -4,13 +4,6 @@ import math
 from einops.layers.torch import Rearrange
 
 
-def kernel_size(in_channel):
-    k = int((math.log2(in_channel) + 1) // 2)
-    if k % 2 == 0:
-        return k + 1
-    else:
-        return k
-
 
 class ChannelAttention(nn.Module):
     def __init__(self, dim, reduction=8):
@@ -64,7 +57,6 @@ class CAFA(nn.Module):
 
         self.avg_pool = nn.AdaptiveAvgPool2d(1)
         self.max_pool = nn.AdaptiveMaxPool2d(1)
-        self.k = kernel_size(in_channel)
         self.channel_conv1 = nn.Conv1d(4, 1, kernel_size=self.k, padding=self.k // 2)
         self.channel_conv2 = nn.Conv1d(4, 1, kernel_size=self.k, padding=self.k // 2)
         self.spatial_conv1 = nn.Conv2d(4, 1, kernel_size=7, padding=3)
