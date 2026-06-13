@@ -30,4 +30,4 @@ causal_conv1d >= 1.4.0
 
 ## Citation
 If you find this work useful, please cite:
-(Citation information will be updated upon acceptance.)
+https://www.sciencedirect.com/science/article/abs/pii/S1568494626007799
